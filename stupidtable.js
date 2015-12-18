@@ -70,7 +70,7 @@
         // Store and read from the .data cache for display text only sorts
         // instead of looking through the DOM every time
         if(typeof(sort_val) === "undefined"){
-          var txt = $e.text();
+          var txt = $.trim($e.text());
           $e.data('sort-value', txt);
           sort_val = txt;
         }
